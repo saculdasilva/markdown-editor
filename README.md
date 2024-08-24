@@ -1,40 +1,33 @@
-# Welcome to Remix!
+# Scaffolding and Dependencies
 
-- 📖 [Remix docs](https://remix.run/docs)
+### Short Description
 
-## Development
+For this POC, we're focusing on simplicity and development speed. We already know we need interactivity and that fellow developers will be reviewing and fiddling with this codebase, so we’ve chosen the following stack:
 
-Run the dev server:
+- **ReactJS**: A familiar framework to go with, providing a robust ecosystem for building interactive UIs.
+- **TailwindCSS**: For styling with minimal setup, allowing us to create a clean and modern interface rapidly.
+- **Basic Routing**: Setting up basic routing to navigate between different sections of the application.
+- **Commands to Run and Build**: Easy-to-use commands for running the development server, building for production, and other necessary tasks.
+- **Code Structure**: Organizing the code in a way that scales, following best practices from the start.
+- **Linting and Formatting**: Ensuring code quality with ESLint and Prettier, which are pre-configured to work seamlessly with the stack.
 
-```shellscript
-npm run dev
-```
+### Why This Stack?
 
-## Deployment
+React itself nowadays recommends using a framework directly rather than just React. This approach allows us to leverage the full power of the ecosystem, including server-side rendering, routing, and more advanced state management, without having to configure everything from scratch.
 
-First, build your app for production:
+Given this, **Remix** was chosen as the primary framework. Remix is a modern, full-stack React framework that comes with out-of-the-box support for routing, data loading, and more. It’s designed to handle both client-side and server-side rendering, making it a powerful choice for building scalable applications.
 
-```sh
-npm run build
-```
+### Getting Started
 
-Then run the app in production mode:
+To get started with this stack, follow these steps:
 
-```sh
-npm start
-```
+1. **Clone the Repository**:
+   \`\`\`bash
+   git clone ${repoURL}
+   \`\`\`
 
-Now you'll need to pick a host to deploy it to.
+### Conclusion notes
 
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+- It would have been interesting to re-build this as an Electron app and have multiple tabs with history.
+- Would be nice to store on the local machine as .md by pressing a button.
+- Should have been properly tested on mobile.
